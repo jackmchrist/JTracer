@@ -1,4 +1,4 @@
-project "WalnutApp"
+project "JTracer"
    kind "ConsoleApp"
    language "C++"
    cppdialect "C++17"
