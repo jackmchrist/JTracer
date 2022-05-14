@@ -3,6 +3,8 @@
 #include "Walnut/Image.h"
 #include "Walnut/Random.h"
 #include "Walnut/Timer.h"
+#include "../vec3.h"
+#include "../color4.h"
 
 #include <iostream>
 
@@ -63,6 +65,8 @@ public:
 				int ir = static_cast<unsigned int>(255.999 * r);
 				int ig = static_cast<unsigned int>(255.999 * g);
 				int ib = static_cast<unsigned int>(255.999 * b);
+
+				//color4 pixel_color(ir, ig, ib, 0xff);
 
 				m_ImageData[(i * m_ViewportWidth) + j] = (0xff << 24) | (ib << 16) | (ig << 8) | ir;
 			}
